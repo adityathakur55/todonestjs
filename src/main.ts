@@ -33,7 +33,7 @@ async function bootstrap() {
   });
 
   // Start the application
-  app.setGlobalPrefix('/api'); 
+  app.setGlobalPrefix('/'); 
   await app.listen(3000);
 }
 
