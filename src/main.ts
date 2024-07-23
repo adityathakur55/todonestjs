@@ -10,7 +10,7 @@ async function bootstrap() {
   app.enableCors();
 
   // Set global prefix for API routes
-  app.setGlobalPrefix('api'); // Ensure this matches the prefix used in your curl requests
+ // Ensure this matches the prefix used in your curl requests
 
   // Use global validation pipes
   app.useGlobalPipes(new ValidationPipe());
@@ -33,6 +33,7 @@ async function bootstrap() {
   });
 
   // Start the application
+  app.setGlobalPrefix('/api'); 
   await app.listen(3000);
 }
 
